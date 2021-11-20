@@ -1,0 +1,38 @@
+/* definimi i css rregullave per body elementin*/
+body
+{
+    background-color: teal;
+}
+/* definimi i css rregullave per h1 elementin*/
+h1
+{
+    font-size: 26px;
+    color: violet;
+}
+/* definimi i selektorit universal, rregullat e stilit brenda selektorit * zbatohen
+per cdo element ne nje html dokument kur referencohet ky css fajll*/
+*
+{
+    margin:0;
+    padding: 0;
+}
+/*Selektori id (#) aplikohet te elementi qe e ka kete vlere te atributi ID*/
+#gabim
+{
+    color:red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: underline;
+}
+/*Selektori klase*/
+.box
+{
+    color:yellow;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: black solid 1px;
+}
+p.kalter
+{
+    color:blue;
+}
