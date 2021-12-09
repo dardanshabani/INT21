@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Transition</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+   <style>
+      
+       #div1
+       {
+            margin-top: 20px;
+            width:200px;
+            height: 150px;
+            background-color: aqua;
+            border:1px solid red;
+            transition: width 5s, height 5s;
+            margin-bottom: 20px;
+       }
+       #div1:hover
+       {
+           width:400px;
+           height: 300px;
+           /* transform: rotate(90deg); */
+       }
+       #div2
+       {
+           margin-top: 50px;
+            width:200px;
+            height: 100px;
+            transform: translate(50px,80px); /*translateX(50px) dhe translateY(80px)*/
+            border:2px solid blueviolet;
+       }
+       
+   </style>
+</head>
+<body>
+   <p>Kaloni mbi div element per te pare tranzicionin</p>
+    <div id="div1">Ky eshte nje DIV </div>
+    <div id="div2">
+        Realizimi i funksionit translate ne transformim
+    </div>
+</body>
+</html>

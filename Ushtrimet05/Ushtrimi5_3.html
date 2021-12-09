@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Animacioni</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+   <style>
+      @keyframes animacioniINT 
+      {
+        0%    {background-color: red;}
+        25%  {background-color: blue;}
+        50% {background-color: blueviolet;}
+        75% {background-color: cadetblue;}
+        100% {background-color: chocolate;}
+      }
+       #div1
+       {
+            width:200px;
+            height: 100px;
+            background-color: aqua;
+            border:1px solid red; 
+            animation: animacioniINT 10s;
+            animation-play-state: running;
+            animation-iteration-count: infinite;
+       }
+    
+       
+   </style>
+</head>
+<body>
+    <div id="div1">Ky eshte nje DIV me animacion</div>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>CSS3 2D Transformimet</title>
+    <style>
+        div.shembull 
+        {
+            width:150px;
+            height:200px;
+            background-color:hsl(0,20%,70%);
+            margin:0px 5px 20px 0;
+            padding: 5px 10px;
+            float:left;
+        }
+        div.shembull div
+        {
+            width:50px;
+            height:50px;
+            background-color:hsl(0,20%,30%);
+        }
+        #translate:hover div
+        {
+            -webkit-transform:translate(50px,100px);/*chrome dhe safari*/
+            -moz-transform:translate(50px,100px);/*MOZILLA*/
+            -ms-transform:translate(50px,100px);/*IE*/
+            -o-transform:translate(50px,100px);/*Opera**/
+            transform:translate(50px,100px);    
+        }
+         #rotate:hover div
+        {
+            -webkit-transform:rotate(25deg);/*chrome dhe safari*/
+            -moz-transform:rotate(25deg);/*MOZILLA*/
+            -ms-transform:rotate(25deg);/*IE*/
+            -o-transform:rotate(25deg);/*Opera**/
+            transform:rotate(25deg);    
+        }
+        #scale:hover div
+        {
+            -webkit-transform:scale(2.5,3);/*chrome dhe safari*/
+            -moz-transform:scale(2.5,3);/*MOZILLA*/
+            -ms-transform:scale(2.5,3);/*IE*/
+            -o-transform:scale(2.5,3);/*Opera**/
+            transform:scale(2.5,3);    
+        }
+        #skew:hover div
+        {
+            -webkit-transform:skew(10deg,30deg);/*chrome dhe safari*/
+            -moz-transform:skew(10deg,30deg);/*MOZILLA*/
+            -ms-transform:skew(10deg,30deg);/*IE*/
+            -o-transform:skew(10deg,30deg);/*Opera**/
+            transform:skew(10deg,30deg);    
+        }
+        /*matrix( scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY() )*/
+        #matrice:hover div
+        {
+            -webkit-transform:matrix(0.75,0.5,-0.5,1.5,20,0);/*chrome dhe safari*/
+            -moz-transform:matrix(0.75,0.5,-0.5,1.5,20,0);/*MOZILLA*/
+            -ms-transform:matrix(0.75,0.5,-0.5,1.5,20,0);/*IE*/
+            -o-transform:matrix(0.75,0.5,-0.5,1.5,20,0);/*Opera**/
+            transform:matrix(0.75,0.5,-0.5,1.5,20,0);    
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS3 2D-Transformimet</h2>
+    <div class="shembull" id="translate">
+        <code>translate()</code>
+        <div>
+
+        </div>
+    </div>
+    <div class="shembull" id="rotate">
+        <code>rotate()</code>
+        <div>
+
+        </div>
+    </div>
+     <div class="shembull" id="scale">
+        <code>scale()</code>
+        <div>
+
+        </div>
+    </div>
+     <div class="shembull" id="skew">
+        <code>skew()</code>
+        <div>
+
+        </div>
+    </div>
+     <div class="shembull" id="matrice">
+        <code>matrix()</code>
+        <div>
+
+        </div>
+    </div>
+</body>
+</html>
