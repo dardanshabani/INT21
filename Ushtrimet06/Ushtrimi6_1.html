@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ushtrimi 1 - JS</title>
+    <script type="text/javascript">
+       var sot = new Date();
+       var oraTani = sot.getHours();
+       var pershendetja;
+       if(oraTani>16)
+       {
+            pershendetja = "Mirembrema!";
+       }
+       else if(oraTani>12)
+       {
+          pershendetja = "Miredita!"; 
+       }
+       else if(oraTani>0)
+       {
+          pershendetja = "Miremengjes!"; 
+       }
+       else
+       {
+          pershendetja = "Tungatjeta!"; 
+       }
+       document.write("<h2>"+pershendetja+"</h2>");
+       alert(pershendetja);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
