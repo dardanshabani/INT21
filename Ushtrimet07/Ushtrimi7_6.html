@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krijimi dhe largimi i elementeve nga DOM</title>
+    <script>
+
+    </script>
+</head>
+<body>
+    <div id="div1">
+        <p id="p2">Paragrafi fillestar</p>
+    </div>
+     <script>
+        var elementiDiv = document.getElementById("div1");
+        var elementiParagraf = document.createElement("p");
+        var permbajtja = document.createTextNode("Pershendetje!");
+        elementiParagraf.appendChild(permbajtja);
+        elementiDiv.appendChild(elementiParagraf);
+        var p2 = document.getElementById("p2");
+
+        elementiDiv.insertBefore(elementiParagraf,p2);
+    </script>
+</body>
+</html>

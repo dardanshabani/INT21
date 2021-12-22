@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Built-in funksionet ne JS</title>
+    <script>
+        function pershendetje()
+        {
+            alert('Pershendetje!');
+        }
+        setInterval(pershendetje,5000);
+        setInterval(function()
+        {
+            console.log('Eshte thirrur intervali ...');
+         },3000); // cdo 3 sekonda shfaqet mesazhi ne console
+        setTimeout(()=>
+        {
+            console.log('timeout funksioni eshte thirrur')
+        }, 7000); // pas 7 sekondave shfaqet mesazhi ne console
+
+        var nr1 =2;
+        var nr2 = 3;
+        var shuma = nr1+nr2;
+        alert(shuma);
+
+        var strNr1 = String(nr1);
+        var strNr2 = String(nr2);
+        var strShuma = strNr1+strNr2;
+        alert(strShuma);
+
+        var intNr2 = Number(strNr2);
+        var shuma1 = nr1+intNr2;
+        alert(shuma1);
+
+        var mosha = 'dhjete';
+        alert(isNaN(mosha));
+
+        var intNr1 = parseInt(nr1);
+        var floatrezultati = parseFloat(nr1/nr2);
+        alert(floatrezultati);  
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

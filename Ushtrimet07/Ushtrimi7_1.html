@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deklarimi var dhe let</title>
+    <script type="text/javascript">
+         let x =1;
+         if(x==1)
+         {
+             let x=2;
+             console.log('vlera e x permes let brenda bllokut:'+ x);
+         }
+         console.log('vlera e x permes let jashta bllokut:'+ x);
+         function varFunksioni()
+         {
+             var x=1;
+             if(x==1)
+             {
+                 var x=2;
+                console.log('vlera e x permes var brenda bllokut:'+ x);
+             }
+             console.log('vlera e x permes var jashte bllokut:'+ x);
+         }
+         varFunksioni();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

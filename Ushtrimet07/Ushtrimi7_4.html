@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metoda e document objektit</title>
+    
+</head>
+<body>
+    <p id="p1">Perdorimi i getElementbyID <strong>ne</strong> javascript</p>
+
+    <script>
+        function lexoPermbajtjen()
+        {
+            var permbajtja = "metoda getElementById perdoret per te marr nje element sipas ID";
+            var elementi = document.getElementById('p1');
+            console.log('Permbajtja e innerHTML: '+ elementi.innerHTML); 
+            console.log('Permbajtja e innerText: '+ elementi.innerText);  
+            console.log('Permbajtja e textContent: '+ elementi.textContent); 
+            console.log('Paragrafi ka permbajtje te re');
+            elementi.textContent = "Permbajtja e paragrafit pas perditesimit";
+        }
+        lexoPermbajtjen();
+    </script>
+</body>
+</html>
