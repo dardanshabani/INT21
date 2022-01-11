@@ -1,0 +1,47 @@
+<!--jQuery Selectors-->
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script src="jquery-1.11.2.min.js"></script>
+<script>
+$(function(){
+
+  $("button").click(function(){
+    $("h2").hide();
+  });
+  
+  $("#btn2").click(function(){
+    $("#test").hide();
+	
+  });
+  
+  $("#btn3").click(function(){
+   
+	$(".test").hide();
+  });
+  
+});
+</script>
+</head>
+<body>
+
+<h2>Ky eshte nje heading</h2>
+<p>Nje paragraf.</p>
+<p>Nje tjeter paragraf.</p>
+<button>Fsheh heading</button>
+
+<h2>Ky eshte nje heading</h2>
+
+<p>Nje paragraf.</p>
+<p id="test">Nje tjeter paragraf.</p>
+<button id="btn2">Fsheh paragrafin me id</button>
+
+<h3 class="test">Ky eshte nje heading me selektore klase</h3> 
+<p class="test">Nje tjeter paragraf me selektore klas</p>
+<button id="btn3">Fsheh paragrafin me selektor class</button>
+</body>
+</html>
+
+

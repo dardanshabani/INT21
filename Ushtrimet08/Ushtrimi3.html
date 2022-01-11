@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="jquery-1.11.2.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").fadeToggle();
+    $("#div2").fadeToggle("fast");
+    $("#div3").fadeToggle(3000);
+  });
+  $("#btn2").click(function(){
+    $("#div1").fadeiIn();
+    $("#div2").fadeiIn("fast");
+    $("#div3").fadeiIn(3000);
+  });
+   $("#btn3").click(function(){
+    $("#div1").fadeiOut();
+    $("#div2").fadeiOut("fast");
+    $("#div3").fadeiOut(3000);
+  });
+});
+</script>
+</head>
+<body>
+
+<p>Demonstrimi i fadeToggle() me parametra te ndryshem.</p>
+<button>Klikoni per te shfaqur/larguar figurat me funksionin toggle</button>
+<button id="btn2">Klikoni per te shfaqur figurat me funksionin fade in</button>
+<button id="btn3">Klikoni per te larguar figurat me funksionin fade out</button>
+<br><br>
+
+<div id="div1" style="width:80px;height:80px;background-color:red;"></div>
+<br>
+<div id="div2" style="width:80px;height:80px;background-color:green;"></div>
+<br>
+<div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
+
+</body>
+</html>

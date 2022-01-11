@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="jquery-1.11.2.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#p1").mouseenter(function(){
+    alert("Keni hyr ne elementin p1!");
+  });
+  $("#p1").mouseleave(function(){
+    alert("Jeni larguar nga elementi p1!");
+  });
+  $("#p1").hover(function(){
+    alert("Keni kaluar mbi elementin p1!");
+  });
+  $("input").focus(function(){
+    $(this).css("background-color", "#F3C");
+	
+  });
+  $("input").blur(function(){
+    $(this).css("background-color","#6F6");
+  });
+});
+</script>
+</head>
+<body>
+
+<p id="p1">Kaloni mbi kete paragraf per te aktivizuar eventin "mouseeneter"</p>
+
+<br/>
+<p>Eventet on focus dhe on blur ne input fusha</p>
+
+<pre>
+ Emri:  <input type="text" name="fullname"><br>
+Email:  <input type="text" name="email">
+<pre>
+
+</body>
+</html>
+
+
+
+
